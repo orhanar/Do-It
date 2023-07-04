@@ -1,0 +1,15 @@
+C:\Users\orhan\source\repos\Do-It\Do-It\bin\Debug\net6.0\Do-It.exe
+C:\Users\orhan\source\repos\Do-It\Do-It\bin\Debug\net6.0\Do-It.deps.json
+C:\Users\orhan\source\repos\Do-It\Do-It\bin\Debug\net6.0\Do-It.runtimeconfig.json
+C:\Users\orhan\source\repos\Do-It\Do-It\bin\Debug\net6.0\Do-It.dll
+C:\Users\orhan\source\repos\Do-It\Do-It\bin\Debug\net6.0\Do-It.pdb
+C:\Users\orhan\source\repos\Do-It\Do-It\obj\Debug\net6.0\Do-It.csproj.AssemblyReference.cache
+C:\Users\orhan\source\repos\Do-It\Do-It\obj\Debug\net6.0\Do-It.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\orhan\source\repos\Do-It\Do-It\obj\Debug\net6.0\Do-It.AssemblyInfoInputs.cache
+C:\Users\orhan\source\repos\Do-It\Do-It\obj\Debug\net6.0\Do-It.AssemblyInfo.cs
+C:\Users\orhan\source\repos\Do-It\Do-It\obj\Debug\net6.0\Do-It.csproj.CoreCompileInputs.cache
+C:\Users\orhan\source\repos\Do-It\Do-It\obj\Debug\net6.0\Do-It.dll
+C:\Users\orhan\source\repos\Do-It\Do-It\obj\Debug\net6.0\refint\Do-It.dll
+C:\Users\orhan\source\repos\Do-It\Do-It\obj\Debug\net6.0\Do-It.pdb
+C:\Users\orhan\source\repos\Do-It\Do-It\obj\Debug\net6.0\Do-It.genruntimeconfig.cache
+C:\Users\orhan\source\repos\Do-It\Do-It\obj\Debug\net6.0\ref\Do-It.dll
