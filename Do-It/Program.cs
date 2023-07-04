@@ -1,4 +1,8 @@
 ﻿
+using System.Runtime.CompilerServices;
+using System.Security.Principal;
+using static System.Net.Mime.MediaTypeNames;
+
 var menuOption = "";
 List<string> ToDos = new List<string>();
 void displayMenu()
@@ -26,11 +30,25 @@ void displayMenu()
         {
             RemoveToDo();
         }
+        else
+        {
+            Console.WriteLine("Invalid Input");
+        }
 
     } while (menuOption != "E");
+
+    if(menuOption == "E")
+    {
+        Environment.Exit(0);
+    }
 }
 void SeeToDo(List<string> ToDos)
 {
+    if(ToDos.Count == 0)
+    {
+        Console.WriteLine("No ToDos");
+    }
+
     for(int i = 0; i < ToDos.Count; i++)
     {
         Console.WriteLine(i+1 + ". " + ToDos[i]);
@@ -41,27 +59,65 @@ void SeeToDo(List<string> ToDos)
 void AddToDo(List<string> ToDos)
 {
     var userInput = " ";
+    bool loop = true;
     do
     {
         Console.WriteLine("Enter a ToDo Description");
         userInput = Console.ReadLine();
-        if(!ToDos.Contains(userInput) && userInput != " ")
+        if(!ToDos.Contains(userInput) && userInput != "")
         {
+            Console.WriteLine("ToDo successfully added: " + userInput);
             ToDos.Add(userInput);
+            loop = false;
         }
-        
-
-    } while (userInput == " ");
-  
+    } while (loop == true);
 }
 
 void RemoveToDo()
 {
+    bool loop = true;
+  
+        var userInput = "";
+        int num = -1;
+        bool isitInt;
 
-}
+    if (ToDos.Count < 1)
+    {
+        do
+        {
+            Console.WriteLine("There are no items");
+            displayMenu();
+            break;
+
+
+        } while (ToDos.Count < 1 || isitInt == false);
+    }
+    else
+    {
+        do
+        {
+            Console.WriteLine("Please enter the index of the ToDos");
+            userInput = Console.ReadLine();
+            isitInt = int.TryParse(userInput, out num);
+ 
+            if (num > ToDos.Count())
+            {
+                Console.WriteLine("Not a valid index");
+
+            }
+            else if (num == 0)
+            {
+                Console.WriteLine("User Inputs is empty");
+ 
+            }
+        } while (isitInt == false || num <= 0 || num > ToDos.Count());
+        Console.WriteLine("ToDo removed: " + userInput);
+        ToDos.RemoveAt(num-1);
+    }   
+ }
+
 
 displayMenu();
-Console.ReadKey();
 
 
 
